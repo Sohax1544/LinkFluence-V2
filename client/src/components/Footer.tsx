@@ -20,7 +20,7 @@ const Footer = () => {
             <Mail className="w-5 h-5" />
             <a 
               href="mailto:linkfluence@gmail.com" 
-              className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors duration-300"
+              className="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-emerald-500 hover:to-blue-500 transition-colors duration-300"
             >
               linkfluence@gmail.com
             </a>

@@ -66,10 +66,10 @@ const EmailCapture = () => {
           {/* Creator Side */}
           <div className="bg-white dark:bg-gray-800 rounded-3xl p-8 lg:p-12 border border-gray-200 dark:border-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
             <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-emerald-500 dark:bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 transition-colors duration-300">
+              <div className="w-16 h-16 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 transition-colors duration-300">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold text-emerald-500 dark:text-emerald-400 mb-4 transition-colors duration-300">
+              <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-blue-500 mb-4">
                 Unlock Sponsorships
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-lg transition-colors duration-300">
@@ -146,10 +146,10 @@ const EmailCapture = () => {
           {/* Brand Side */}
           <div className="bg-white dark:bg-gray-800 rounded-3xl p-8 lg:p-12 border border-gray-200 dark:border-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
             <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-blue-500 dark:bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 transition-colors duration-300">
+              <div className="w-16 h-16 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 transition-colors duration-300">
                 <Target className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold text-blue-500 dark:text-blue-400 mb-4 transition-colors duration-300">
+              <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-blue-500 mb-4">
                 Launch Influencer Campaigns
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-lg transition-colors duration-300">
