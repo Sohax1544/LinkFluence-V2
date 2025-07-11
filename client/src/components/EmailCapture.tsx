@@ -64,7 +64,7 @@ const EmailCapture = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Creator Side */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800 rounded-3xl p-8 lg:p-12 transition-colors">
+          <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 dark:from-emerald-900 dark:to-emerald-800 rounded-3xl p-8 lg:p-12 transition-colors">
             <div className="text-center mb-8">
               <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 transition-colors">
                 Unlock Sponsorships
@@ -119,7 +119,7 @@ const EmailCapture = () => {
                   <select
                     value={creatorForm.niche}
                     onChange={(e) => setCreatorForm({...creatorForm, niche: e.target.value})}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
                     required
                   >
                     <option value="">Select your niche</option>
@@ -131,7 +131,7 @@ const EmailCapture = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+                  className="w-full bg-gradient-to-r from-emerald-500 to-blue-500 hover:from-emerald-600 hover:to-blue-600 text-white py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
                 >
                   <span>Get Started as Creator</span>
                   <ArrowRight className="w-5 h-5" />
@@ -141,7 +141,7 @@ const EmailCapture = () => {
           </div>
 
           {/* Brand Side */}
-          <div className="bg-gradient-to-br from-cyan-50 to-cyan-100 dark:from-cyan-900 dark:to-cyan-800 rounded-3xl p-8 lg:p-12 transition-colors">
+          <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800 rounded-3xl p-8 lg:p-12 transition-colors">
             <div className="text-center mb-8">
               <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 transition-colors">
                 Launch Influencer Campaigns
@@ -169,7 +169,7 @@ const EmailCapture = () => {
                     type="text"
                     value={brandForm.name}
                     onChange={(e) => setBrandForm({...brandForm, name: e.target.value})}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="Your company"
                     required
                   />
@@ -183,7 +183,7 @@ const EmailCapture = () => {
                     type="email"
                     value={brandForm.email}
                     onChange={(e) => setBrandForm({...brandForm, email: e.target.value})}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="your@company.com"
                     required
                   />
@@ -196,7 +196,7 @@ const EmailCapture = () => {
                   <select
                     value={brandForm.category}
                     onChange={(e) => setBrandForm({...brandForm, category: e.target.value})}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     required
                   >
                     <option value="">Select category</option>
@@ -208,7 +208,7 @@ const EmailCapture = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-400 dark:hover:bg-cyan-500 text-white py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+                  className="w-full bg-gradient-to-r from-blue-500 to-emerald-500 hover:from-blue-600 hover:to-emerald-600 text-white py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
                 >
                   <span>Get Started as Brand</span>
                   <ArrowRight className="w-5 h-5" />

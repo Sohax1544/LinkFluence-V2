@@ -36,8 +36,8 @@ const Process = () => {
           {steps.map((step, index) => (
             <div key={index}>
               <div className="text-center max-w-xs">
-                <div className="w-20 h-20 bg-white dark:bg-gray-800 rounded-full shadow-lg flex items-center justify-center mx-auto mb-6 border-4 border-blue-100 dark:border-blue-900 transition-colors">
-                  <step.icon className="w-10 h-10 text-blue-600 dark:text-blue-400" />
+                <div className="w-20 h-20 bg-white dark:bg-gray-800 rounded-full shadow-lg flex items-center justify-center mx-auto mb-6 border-4 border-emerald-100 dark:border-emerald-900 transition-colors">
+                  <step.icon className="w-10 h-10 text-emerald-600 dark:text-emerald-400" />
                 </div>
                 
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3 transition-colors">
@@ -51,7 +51,7 @@ const Process = () => {
               
               {index < steps.length - 1 && (
                 <div className="hidden lg:block">
-                  <div className="w-16 h-0.5 bg-gradient-to-r from-blue-300 to-cyan-300 dark:from-blue-600 dark:to-cyan-600"></div>
+                  <div className="w-16 h-0.5 bg-gradient-to-r from-emerald-300 to-blue-300 dark:from-emerald-600 dark:to-blue-600"></div>
                 </div>
               )}
             </div>

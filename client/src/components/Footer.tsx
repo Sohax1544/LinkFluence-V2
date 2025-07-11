@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="text-center">
           <div className="flex items-center justify-center space-x-2 mb-6">
             <div className="text-2xl font-bold">
-              <span className="text-blue-400">Link</span>
-              <span className="text-cyan-400">Fluence</span>
+              <span className="text-emerald-400">Link</span>
+              <span className="text-blue-400">Fluence</span>
             </div>
           </div>
           
@@ -21,10 +21,10 @@ const Footer = () => {
           <div className="flex items-center justify-center space-x-2 text-gray-300 dark:text-gray-400 transition-colors">
             <Mail className="w-5 h-5" />
             <a 
-              href="mailto:hello@linkfluence.com" 
+              href="mailto:LiinkFluencce@gmail.com" 
               className="hover:text-white transition-colors"
             >
-              hello@linkfluence.com
+              LiinkFluencce@gmail.com
             </a>
           </div>
           
