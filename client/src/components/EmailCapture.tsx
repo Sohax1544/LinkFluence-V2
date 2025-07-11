@@ -1,5 +1,5 @@
 import { useState, FormEvent } from 'react';
-import { ArrowRight, Shield, CheckCircle } from 'lucide-react';
+import { ArrowRight, Shield, CheckCircle, Users, Target } from 'lucide-react';
 import { saveSubmission } from '../utils/dataManager';
 
 const EmailCapture = () => {
@@ -60,66 +60,69 @@ const EmailCapture = () => {
   };
 
   return (
-    <section id="email-capture" className="py-20 bg-white dark:bg-gray-800 transition-colors">
+    <section id="email-capture" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Creator Side */}
-          <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 dark:from-emerald-900 dark:to-emerald-800 rounded-3xl p-8 lg:p-12 transition-colors">
+          <div className="bg-gray-800 rounded-3xl p-8 lg:p-12 border border-gray-700">
             <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 transition-colors">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Users className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-3xl font-bold text-blue-400 mb-4">
                 Unlock Sponsorships
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-lg transition-colors">
+              <p className="text-gray-400 text-lg">
                 Get matched with brands that align with your content
               </p>
             </div>
 
             {creatorSubmitted ? (
               <div className="text-center py-8">
-                <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle className="w-8 h-8 text-green-600 dark:text-green-400" />
+                <div className="w-16 h-16 bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-8 h-8 text-green-400" />
                 </div>
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Thank You!</h4>
-                <p className="text-gray-600 dark:text-gray-300">We'll be in touch with sponsorship opportunities soon.</p>
+                <h4 className="text-xl font-semibold text-white mb-2">Thank You!</h4>
+                <p className="text-gray-400">We'll be in touch with sponsorship opportunities soon.</p>
               </div>
             ) : (
               <form onSubmit={handleCreatorSubmit} className="space-y-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors">
-                    Full Name
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
+                    Name
                   </label>
                   <input
                     type="text"
                     value={creatorForm.name}
                     onChange={(e) => setCreatorForm({...creatorForm, name: e.target.value})}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="Your name"
                     required
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors">
-                    Email Address
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
+                    Email
                   </label>
                   <input
                     type="email"
                     value={creatorForm.email}
                     onChange={(e) => setCreatorForm({...creatorForm, email: e.target.value})}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="your@email.com"
                     required
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors">
-                    Content Niche
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
+                    Niche
                   </label>
                   <select
                     value={creatorForm.niche}
                     onChange={(e) => setCreatorForm({...creatorForm, niche: e.target.value})}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     required
                   >
                     <option value="">Select your niche</option>
@@ -131,7 +134,7 @@ const EmailCapture = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-emerald-500 to-blue-500 hover:from-emerald-600 hover:to-blue-600 text-white py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+                  className="w-full bg-gradient-to-r from-blue-500 to-emerald-500 hover:from-blue-600 hover:to-emerald-600 text-white py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
                 >
                   <span>Get Started as Creator</span>
                   <ArrowRight className="w-5 h-5" />
@@ -141,65 +144,68 @@ const EmailCapture = () => {
           </div>
 
           {/* Brand Side */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800 rounded-3xl p-8 lg:p-12 transition-colors">
+          <div className="bg-gray-800 rounded-3xl p-8 lg:p-12 border border-gray-700">
             <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 transition-colors">
+              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Target className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-3xl font-bold text-blue-400 mb-4">
                 Launch Influencer Campaigns
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-lg transition-colors">
+              <p className="text-gray-400 text-lg">
                 Connect with creators who resonate with your audience
               </p>
             </div>
 
             {brandSubmitted ? (
               <div className="text-center py-8">
-                <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle className="w-8 h-8 text-green-600 dark:text-green-400" />
+                <div className="w-16 h-16 bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-8 h-8 text-green-400" />
                 </div>
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Thank You!</h4>
-                <p className="text-gray-600 dark:text-gray-300">We'll connect you with perfect creators for your brand.</p>
+                <h4 className="text-xl font-semibold text-white mb-2">Thank You!</h4>
+                <p className="text-gray-400">We'll connect you with perfect creators for your brand.</p>
               </div>
             ) : (
               <form onSubmit={handleBrandSubmit} className="space-y-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors">
-                    Company Name
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
+                    Name
                   </label>
                   <input
                     type="text"
                     value={brandForm.name}
                     onChange={(e) => setBrandForm({...brandForm, name: e.target.value})}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                    placeholder="Your company"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    placeholder="Your name"
                     required
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors">
-                    Email Address
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
+                    Email
                   </label>
                   <input
                     type="email"
                     value={brandForm.email}
                     onChange={(e) => setBrandForm({...brandForm, email: e.target.value})}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="your@company.com"
                     required
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors">
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
                     Product Category
                   </label>
                   <select
                     value={brandForm.category}
                     onChange={(e) => setBrandForm({...brandForm, category: e.target.value})}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     required
                   >
-                    <option value="">Select category</option>
+                    <option value="">Select your category</option>
                     {categories.map(category => (
                       <option key={category} value={category}>{category}</option>
                     ))}
@@ -220,7 +226,7 @@ const EmailCapture = () => {
 
         {/* Privacy Note */}
         <div className="text-center mt-8">
-          <div className="flex items-center justify-center space-x-2 text-gray-600 dark:text-gray-400 transition-colors">
+          <div className="flex items-center justify-center space-x-2 text-gray-400">
             <Shield className="w-4 h-4" />
             <span className="text-sm">We respect your inbox. No spam, ever.</span>
           </div>
