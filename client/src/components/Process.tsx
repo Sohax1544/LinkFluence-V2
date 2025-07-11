@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Target, Users, TrendingUp } from 'lucide-react';
 
 const Process = () => {
@@ -34,7 +34,7 @@ const Process = () => {
 
         <div className="flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-12">
           {steps.map((step, index) => (
-            <React.Fragment key={index}>
+            <div key={index}>
               <div className="text-center max-w-xs">
                 <div className="w-20 h-20 bg-white dark:bg-gray-800 rounded-full shadow-lg flex items-center justify-center mx-auto mb-6 border-4 border-blue-100 dark:border-blue-900 transition-colors">
                   <step.icon className="w-10 h-10 text-blue-600 dark:text-blue-400" />
@@ -54,7 +54,7 @@ const Process = () => {
                   <div className="w-16 h-0.5 bg-gradient-to-r from-blue-300 to-cyan-300 dark:from-blue-600 dark:to-cyan-600"></div>
                 </div>
               )}
-            </React.Fragment>
+            </div>
           ))}
         </div>
       </div>

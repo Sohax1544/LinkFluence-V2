@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Download, Trash2, Users, Building, Eye, EyeOff } from 'lucide-react';
 import { getSubmissions, exportToCSV, clearSubmissions } from '../utils/dataManager';
 import { Submission } from '../types';

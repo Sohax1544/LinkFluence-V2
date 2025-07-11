@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, FormEvent } from 'react';
 import { ArrowRight, Shield, CheckCircle } from 'lucide-react';
 import { saveSubmission } from '../utils/dataManager';
 
@@ -21,7 +21,7 @@ const EmailCapture = () => {
   const niches = ['Gaming', 'Fashion', 'Tech', 'Lifestyle', 'Fitness', 'Food', 'Travel', 'Beauty'];
   const categories = ['E-commerce', 'SaaS', 'Consumer Goods', 'Fashion', 'Tech', 'Health', 'Finance', 'Entertainment'];
 
-  const handleCreatorSubmit = (e: React.FormEvent) => {
+  const handleCreatorSubmit = (e: FormEvent) => {
     e.preventDefault();
     
     saveSubmission({
@@ -40,7 +40,7 @@ const EmailCapture = () => {
     }, 3000);
   };
 
-  const handleBrandSubmit = (e: React.FormEvent) => {
+  const handleBrandSubmit = (e: FormEvent) => {
     e.preventDefault();
     
     saveSubmission({
