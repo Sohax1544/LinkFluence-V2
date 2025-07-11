@@ -11,7 +11,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="text-2xl font-bold">
-              <span className="text-blue-500 dark:text-blue-400 transition-colors duration-300">LinkFluence</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-blue-500">LinkFluence</span>
             </div>
           </div>
           

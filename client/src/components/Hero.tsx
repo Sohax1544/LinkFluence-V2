@@ -16,7 +16,7 @@ const Hero = () => {
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6 transition-colors duration-300">
             Do what you do best.
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500 animate-pulse">Let us worry about everything in between</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">Let us worry about everything in between</span>
           </h1>
           
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed transition-colors duration-300">
@@ -46,7 +46,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button 
               onClick={scrollToEmailCapture}
-              className="group bg-gradient-to-r from-blue-500 to-emerald-500 hover:from-blue-600 hover:to-emerald-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2 animate-bounce"
+              className="group bg-gradient-to-r from-emerald-500 to-blue-500 hover:from-emerald-600 hover:to-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2"
             >
               <span>Creators: Get Sponsors</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -59,12 +59,6 @@ const Hero = () => {
               <span>Brands: Find Influencers</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </button>
-          </div>
-
-          <div className="mt-8 text-sm text-gray-500 dark:text-gray-400 transition-colors">
-            <span className="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-3 py-1 rounded-full font-medium transition-colors">
-              🔥 First 50 signups get free contract review
-            </span>
           </div>
         </div>
       </div>

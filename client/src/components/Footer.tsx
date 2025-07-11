@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="text-center">
           <div className="flex items-center justify-center space-x-2 mb-6">
             <div className="text-2xl font-bold">
-              <span className="text-blue-500 dark:text-blue-400 transition-colors duration-300">LinkFluence</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-blue-500">LinkFluence</span>
             </div>
           </div>
           
@@ -20,7 +20,7 @@ const Footer = () => {
             <Mail className="w-5 h-5" />
             <a 
               href="mailto:linkfluence@gmail.com" 
-              className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300"
+              className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors duration-300"
             >
               linkfluence@gmail.com
             </a>
