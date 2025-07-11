@@ -10,13 +10,12 @@ import AdminPanel from './components/AdminPanel';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
       <Header />
       <Hero />
       <ValueProposition />
       <Process />
       <EmailCapture />
-      <SocialProof />
       <Footer />
       <AdminPanel />
     </div>
